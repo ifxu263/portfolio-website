@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Syed's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="script.js" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+      </head>
+      <div class="logo">Syed</div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="home" id="home">
+      <h1 class="animate__animated animate__bounce">hi im syed irfan</h1>
+
+      <p>
+        A passionate developer creating elegant and performant web solutions.
+      </p>
+      <button class="btn">Download Resume</button>
+    </section>
+
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <p>
+        I'm Syed Irfan, a passionate and performance-driven BCS (Bachelor of
+        Computer Science) student at MGM College, specializing in Computer
+        Science and IT. I have a strong foundation in front-end and back-end
+        technologies and a deep interest in building user-friendly, interactive,
+        and responsive web applications.
+      </p>
+      <p style="margin-top: 20px">
+        <strong>Technical Skills:</strong><br />
+        HTML, CSS, JavaScript, Java, C++, DBMS, Software Testing, Computer
+        Networks
+      </p>
+      <p style="margin-top: 20px">
+        <strong>Soft Skills & Interests:</strong><br />
+        Playing Football, Gaming,reading books
+      </p>
+    </section>
+
+    <section class="projects" id="projects">
+      <h2>Projects</h2>
+      <div class="project-gallery">
+        <div class="project-card">
+          <h3>perfume website</h3>
+          <p>
+            A responsive perfume website built with modern HTML, CSS, and
+            animations.
+          </p>
+          <a
+            href="https://imaginative-twilight-8e383d.netlify.app/"
+            target="_blank"
+            class="project-btn"
+            >View Project</a
+          >
+        </div>
+
+        <!-- You can duplicate this div for more projects -->
+        <!--
+    <div class="project-card">
+      <h3>Another Project</h3>
+      <p>Description about another project goes here.</p>
+      <a href="#" target="_blank" class="project-btn">View Project</a>
+    </div>
+    -->
+      </div>
+    </section>
+
+    <section class="resume" id="resume">
+      <h2>Resume</h2>
+      <p>Download or view my resume to learn more about my experience.</p>
+    </section>
+
+    <section class="certificates" id="certificates">
+      <h2>Certificates</h2>
+      <p>
+        Certified in multiple areas including Web Development, Java, and more.
+      </p>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Contact</h2>
+      <p>
+        You can reach me at
+        <a
+          href="mailto:sayyedirfaan263@gmail.com"
+          style="color: #00ffd5; text-decoration: underline"
+        >
+          sayyedirfaan263@gmail.com
+        </a>
+      </p>
+    </section>
+
+    <script>
+      // Simple scroll reveal effect
+      const sections = document.querySelectorAll("section");
+      window.addEventListener("scroll", () => {
+        sections.forEach((section) => {
+          const top = window.scrollY;
+          const offset = section.offsetTop - 300;
+          if (top >= offset) {
+            section.classList.add("reveal");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

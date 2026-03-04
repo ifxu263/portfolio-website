@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>Syed Irfan - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Syed Irfan</div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section id="home" class="home">
+      <h1>Hello, I'm Syed Irfan</h1>
+      <p>
+        A Computer Science student passionate about front-end development,
+        football, gaming, and fitness.
+      </p>
+      <a href="#projects"><button class="btn">Explore My Work</button></a>
+    </section>
+
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <p>
+        I'm a BCS student at MGM College, specializing in Computer Science and
+        IT. I possess strong skills in JavaScript, HTML, DBMS, Java, C++,
+        Software Testing, and Computer Networks. Apart from coding, I enjoy
+        football, workouts, and gaming.
+      </p>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2>Projects</h2>
+      <p>
+        Here are some of my recent works showcasing elegant design and clean
+        coding practices.
+      </p>
+      <div class="project-gallery">
+        <div class="project-card">
+          <h3>Perfume E-Commerce Website</h3>
+          <p>
+            A clean and responsive perfume e-commerce site designed to offer a
+            great shopping experience.
+          </p>
+          <p><strong>Tech Used:</strong> HTML, CSS, JavaScript</p>
+          <a
+            href="https://imaginative-twilight-8e383d.netlify.app/"
+            target="_blank"
+            class="btn"
+            >View Live</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="resume" class="resume">
+      <h2>Resume</h2>
+      <a href="SYED_IRFAN_RESUME.pdf" class="btn" download>Download Resume</a>
+      <a href="SYED_IRFAN_RESUME.pdf" class="btn" target="_blank"
+        >View Online</a
+      >
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p>
+        You can reach me at
+        <a href="mailto:sayyedirfaan263@gmail.com">sayyedirfaan263@gmail.com</a>
+      </p>
+    </section>
+
+    <script>
+      window.addEventListener("scroll", () => {
+        const elements = document.querySelectorAll(
+          ".about, .projects, .resume, .contact"
+        );
+        const trigger = window.innerHeight / 1.2;
+        elements.forEach((el) => {
+          const top = el.getBoundingClientRect().top;
+          if (top < trigger) el.classList.add("reveal");
+        });
+      });
+    </script>
+  </body>
+</html>
